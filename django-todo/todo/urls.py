@@ -21,6 +21,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", TodoAppView, name="todolist"),
     path("todo/", AddTodo, name="addTodo"),
+    path("todo/<item_id>/delete", DeleteTodo, name="deleteToDo")
     # Delete todo
     # Edit todo
     # Update todo
